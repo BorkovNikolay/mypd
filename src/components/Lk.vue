@@ -1,28 +1,28 @@
 <template>
-    <el-scrollbar ref="scrollbarRef" height="100vh" always @scroll="scroll">
-    <Header/>
+  <el-scrollbar ref="scrollbarRef" height="100vh" always @scroll="scroll">
+  <Header/>
 
-    <div class="common-layout">
-    <el-container>
+  <div class="common-layout">
+  <el-container>
 
 
-      <el-aside width="auto">
-        <div class="stages-bg">
-        <el-avatar :size="100"
-          src="https://avatars.mds.yandex.net/i?id=a58aa42c311bff2d24a063699f0a546bfc2db3996a074653-12471101-images-thumbs&n=13"
-        />
-        <el-divider border-style="double" />
-        <h1>ФИО</h1>
-        <el-divider border-style="double" />
-        <h1>Учебное заведение</h1>
-        <el-divider border-style="double" />
-        <h1>номер телефона</h1>
-        <el-divider border-style="double" />
-        <h1>Почта</h1>
-        <el-divider border-style="double" />
-        <div>
-          <el-button type="primary" plain round >Редактировать</el-button>
-        </div>
+    <el-aside width="auto">
+      <div class="stages-bg">
+      <el-avatar :size="100"
+        src="https://avatars.mds.yandex.net/i?id=a58aa42c311bff2d24a063699f0a546bfc2db3996a074653-12471101-images-thumbs&n=13"
+      />
+      <el-divider border-style="double" />
+      <h1>ФИО</h1>
+      <el-divider border-style="double" />
+      <h1>Учебное заведение</h1>
+      <el-divider border-style="double" />
+      <h1>номер телефона</h1>
+      <el-divider border-style="double" />
+      <h1>Почта</h1>
+      <el-divider border-style="double" />
+      <div>
+        <el-button type="primary" plain round >Редактировать</el-button>
+      </div>
       </div>
       </el-aside>
 
@@ -54,9 +54,9 @@
         </el-countdown>
         <div class="countdown-footer">{{ value2.format('YYYY-MM-DD') }}</div>
       </el-aside>
-
-
     </el-container>
+  
+  
   </div>
 </el-scrollbar>
 </template>
