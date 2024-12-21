@@ -8,21 +8,16 @@ import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import 'element-plus/theme-chalk/display.css'
 
 import { createRouter, createWebHistory } from 'vue-router'
-import Header from "@/components/Header.vue";
 import Information from "@/components/Information.vue";
 import Lk from "@/components/Lk.vue";
-import Base from "@/components/Base.vue";
-
-
-
+import primer from "@/components/primer.vue";
 
 const app = createApp(App)
 
 const routes = [
-  //{ path: '/', component: Header},
   { path: '/', component: Information },
   { path: '/lk', component: Lk },
-  { path: '/a', component: Base },
+  { path: '/a', component: primer },
 ]
 
 const router = createRouter({

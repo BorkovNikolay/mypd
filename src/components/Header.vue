@@ -25,7 +25,7 @@
           <el-col :xs="1" :sm="3" :md="5" :lg="6"  >
             <div class="row-bg">
               <el-button type="primary" plain round><el-icon><Promotion /></el-icon></el-button>
-              <el-button type="primary" plain round>Registration</el-button>
+              <el-button type="primary" plain round @click="Base()">Registration</el-button>
               <el-button type="primary" plain round>Join</el-button>
               <el-button type="primary" plain circle class="LK" @click="Lk()">
                 <el-avatar :size="25"
@@ -44,9 +44,9 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-  import { Sunny, Moon } from '@element-plus/icons-vue'
-  const value2 = ref(false)
-  const loading2 = ref(false)
+import { Sunny, Moon } from '@element-plus/icons-vue'
+const value2 = ref(false)
+const loading2 = ref(false)
 
 import { useRouter } from 'vue-router';
 
@@ -66,7 +66,13 @@ function Main() {
     path: `/`  // Корректный путь
   });
 }
-  
+ 
+function Base() {
+  router.push({
+    path: `/a`  // Корректный путь
+  });
+}
+
 
 const beforeChange2 = () => {
   loading2.value = true
